@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Fairy Game</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body id="top">
+    <header class="site-header">
+        <a href="index.html" class="logo">Kathryn Nikkel</a>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="projects.html">Projects</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="resume.html">Resume</a>
+        </nav>
+    </header>
+
+<main class="project-page">
+<h1>Fairy Game</h1>
+<h2>Interactive storytelling design using AI-assisted prototyping</h2>
+<img src="images/fairy-game/water-chaotic-good.png" class="solo-image">
+<section>
+<h3>Overview</h3>
+<p>
+An AI-assisted, branching interactive quiz where users roleplay as a fairy and receive personalized moral alignment results with custom-generated visuals and rarity feedback designed to encourage replayability.
+</p>
+
+<h3>Key Design Goals</h3>
+<ul>
+<li>Create an engaging replayable storytelling experience</li>
+<li>Balance alignment outcomes across branching paths</li>
+<li>Use AI tools to accelerate visual and interaction prototyping</li>
+<li>Improve engagement through personalized end-screen feedback</li>
+</ul>
+
+<p>
+<strong>Tools:</strong> Figma Make, Meshy AI Image Generation, Adobe Firefly<br>
+<strong>Transparency Note:</strong> AI tools were used for ideation, prototyping assistance, and image generation. All visuals were created for non-commercial, experimental use.
+</p>
+</section>
+<br>
+<a href="https://www.figma.com/make/gQ9EXkxs8UWL2mTtBgsgNc/Fairy-Themed-Adventure-Game-V02?fullscreen=1&t=Hmhc4VdlEgqP7Hhh-1" target="_blank" class="back-home-btn">
+    Play Interactive Prototype
+</a>
+<br><br>
+<section>
+<h3>Problem Statement</h3>
+<p>
+How might we design a replayable, story-driven interactive experience that balances narrative freedom, outcome probability, and personalized feedback while leveraging AI as a creative collaborator?
+</p>
+</section>
+
+<section>
+<h3>Initial Concept</h3>
+<p>
+The idea stemmed from a love of fantasy RPGs and personality quizzes. Fairies were chosen because they naturally span the moral spectrum, from chaotic tricksters to benevolent guardians, making them ideal for an alignment-based experience.
+</p>
+
+<p>
+<strong>Target Audience:</strong><br>
+Fantasy fans, RPG players, and personality quiz lovers. Due to reading complexity, the experience is best suited for users 8+.
+</p>
+</section>
+
+<section>
+<h3>Early Prototype (AI-Assisted)</h3>
+
+<p><strong>Initial Prompt</strong></p>
+<ul>
+<li>Fairy type selection</li>
+<li>Power selection</li>
+<li>~5 branching questions</li>
+<li>Alignment result</li>
+</ul>
+
+<p><strong>Key Issue Identified</strong></p>
+<p>
+Five questions made certain alignments statistically unlikely, with some nearly impossible to reach. Fairy type and powers also had little influence on branching paths.
+</p>
+</section>
+
+<section class="fg-grid">
+    <img src="images/fairy-game/start.jpg">
+    <img src="images/fairy-game/start-end.jpg">
+</section>
+
+<section>
+<h3>Iteration 1: Strengthening Branch Logic</h3>
+
+<p><strong>Changes</strong></p>
+<ul>
+<li>Expanded to 13 questions</li>
+<li>Added fairy-type-specific answer options per question</li>
+<li>Removed separate “power” selection to streamline flow</li>
+<li>Added contextual descriptions hinting how fairy types influence outcomes</li>
+</ul>
+
+<p><strong>Result</strong></p>
+<ul>
+<li>Improved alignment distribution</li>
+<li>Stronger sense of player agency</li>
+</ul>
+</section>
+
+<section>
+<h3>Major UX Iteration</h3>
+<h4>End Screen Redesign</h4>
+
+<p><strong>Before</strong></p>
+<ul>
+<li>Alignment result only</li>
+<li>No replay incentive</li>
+<li>No explanation of outcome probability or rarity</li>
+</ul>
+
+<p><strong>After</strong></p>
+<ul>
+<li>Alignment summary</li>
+<li>Alignment odds visualization / difficulty framing</li>
+<li>Replay call-to-action</li>
+<li>Developed 54 alignment-specific visuals to reinforce personalization and replay value</li>
+</ul>
+
+<p>
+Rather than forcing perfectly equal alignment odds (which would require significantly more questions), I reframed uneven probabilities into a feature.
+</p>
+
+<p>
+Displaying alignment rarity transformed a structural limitation into a gamified achievement mechanic, encouraging replay behavior and increasing perceived depth.
+</p>
+
+<p>
+This shift improved engagement without increasing cognitive load.
+</p>
+</section>
+
+<section class="fg-grid">
+    <img src="images/fairy-game/now-1.jpg">
+    <img src="images/fairy-game/now-2.jpg">
+    <img src="images/fairy-game/now-3.jpg">
+    <img src="images/fairy-game/now-6.jpg">
+    <img src="images/fairy-game/now-4.jpg">
+    <img src="images/fairy-game/now-5.jpg">
+</section>
+
+<section>
+<h3>Updated User Flow</h3>
+
+<p><strong>Original Flow</strong><br>
+Start → Type Name → Choose Fairy Type → Choose Powers → Short Question Branch → Result
+</p>
+
+<p><strong>Refined Flow</strong><br>
+Start → Generate or Enter Name → Choose Fairy Type → In-Depth Branching Questions → Alignment Result + Summary + Custom Visual + Rarity → Replay
+</p>
+
+<p><strong>Improvements</strong></p>
+<ul>
+<li>Reduced friction at entry (added name generator)</li>
+<li>Increased narrative depth</li>
+<li>Strengthened reward feedback loop</li>
+</ul>
+</section>
+
+<section>
+<h3>Usability Findings</h3>
+
+<p>Informal usability testing surfaced early friction points:</p>
+
+<p><strong>1. Disabled Start Button Confusion</strong><br>
+Users overlooked the required name field.<br>
+→ Identified the need for inline validation messaging to clarify why the start button is disabled.
+</p>
+
+<p><strong>2. Accidental Double Selections</strong><br>
+Users could unintentionally click multiple answers quickly.<br>
+→ Identified potential need for back navigation.
+</p>
+
+<p><strong>3. Minor Copy Errors</strong><br>
+Grammar issue corrected after feedback.
+</p>
+
+<p>
+These insights reinforced the importance of clear system feedback and user control.
+</p>
+</section>
+
+<section>
+<h3>AI Collaboration Reflection</h3>
+<ul>
+<li>AI excels at rapid exploration and structural scaffolding.</li>
+<li>Prompt refinement became an extension of interaction design — shaping structure, constraints, and system logic through language.</li>
+<li>Constraints can be reframed into engaging product features.</li>
+<li>Rather than replacing design thinking, AI amplified iteration speed while still requiring intentional UX direction.</li>
+</ul>
+</section>
+
+<section>
+<h3>What I Would Improve Next</h3>
+<ul>
+<li>Add a back button for increased control</li>
+<li>Introduce microinteractions for stronger visual feedback</li>
+<li>Conduct structured usability testing with target users</li>
+</ul>
+</section>
+
+<section>
+<h3>Impact on My UX Thinking</h3>
+<ul>
+<li>Design for replay loops and engagement systems</li>
+<li>Balance probability and user perception</li>
+<li>Turn technical constraints into intentional product features</li>
+<li>Direct AI outputs through iterative UX reasoning</li>
+</ul>
+
+<p>
+It reinforced that strong UX is not just about functionality — it’s about motivation, clarity, and emotional reward.
+</p>
+</section>
+
+</main>
+
+<a href="#top" class="back-to-top">↑ Back to Top</a>
+
+<footer>
+    <p>© 2026 Kathryn Nikkel</p>
+</footer>
+
+</body>
+
+</html>
